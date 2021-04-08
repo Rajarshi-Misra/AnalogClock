@@ -1,0 +1,62 @@
+body{
+    background-color: pink;
+}
+.clock{
+    background-color: white;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    position: relative;
+}
+.clock .number {
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   text-align: center;
+   transform: rotate(var(--r));
+   font: 40px bold;
+}
+.clock .number1{ --r: 30deg;}
+.clock .number2{ --r: 60deg;}
+.clock .number3{ --r: 90deg;}
+.clock .number4{ --r: 120deg;}
+.clock .number5{ --r: 150deg;}
+.clock .number6{ --r: 180deg;}
+.clock .number7{ --r: 210deg;}
+.clock .number8{ --r: 240deg;}
+.clock .number9{ --r: 270deg;}
+.clock .number10{ --r: 300deg;}
+.clock .number11{ --r: 330deg;}
+.clock .number12{ --r: 360deg;}
+#hour{
+    transform-origin: bottom;
+    position: absolute;
+    left: 49.5%;
+    top: 20%;
+    height: 30%;
+    width: 10px;
+    background-color: black;
+   
+}
+
+#mins{
+    transform-origin: bottom;
+    transform-origin: bottom;
+    position: absolute;
+    left: 49.75%; 
+    top: 15%;                                  
+    height: 35%;
+    width: 7.5px;
+    background-color: green                                                                 ;
+
+}
+#sec{
+    transform-origin: bottom;
+    transform-origin: bottom;
+    position: absolute;
+    left: 50%;
+    top: 10%;
+    height: 40%;
+    width: 5px;
+    background-color: red;
+}
